@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link title="Template Style Sheet" rel="stylesheet" href="'my-templates.css"
+          type="text/css">
+    <h1 class="ribbon">
+        <strong class="ribbon-content">Ribbons</strong>
+    </h1>
+
+    <br><br>
+    <header>Closure</header>
+    <br><br>
+    <title>Template</title>
+    <!--One way to identify text for special formatting is to use the <span> </span> tags to bracket the text. -->
+    <!--<span class="bold">Lorem ipsum dolor</span> -->
+
+</head>
+
+<body>
+<!--start of content-->
+<p> In the rays of the sun I am longing for the darkness....... </p>
+<!--end of content-->
+<br><br><br>
+<footer> Opeth </footer>
+<br>
+</body>
+</html>
+.
+<style>
+
+    .ribbon {
+    font-size: 16px !important;
+        width: 50%;
+        position: relative;
+        background: #ba89b6;
+        color: #fff;
+        text-align: center;
+        padding: 1em 2em;
+        margin: 2em auto 3em;
+    }
+
+.ribbon:before, .ribbon:after {
+    content:"";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #986794;
+    z-index: -1; }
+
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #804f7c transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+
+    body {
+        font-family: Verdana, Arial, Helvetica, Serif;
+        background-color: #e8fffd;
+        color: black;
+        line-height: normal;
+        margin: 3 25;
+        min-width: 400px;
+    }
+
+    header {
+        font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+        color: darkgreen;
+        font-weight: bold;
+        font-style: oblique;
+        text-align: center;
+    }
+
+    h1 {
+        color: darkgreen;
+        text-align: center;
+    }
+
+    p, footer {
+        text-align: center
+    }
+
+
+</style>
